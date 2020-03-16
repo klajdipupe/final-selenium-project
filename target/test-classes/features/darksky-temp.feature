@@ -2,7 +2,7 @@
 Feature: temp feature
 
     Background:
-     I am on darsky  page
+    # Given I am on darsky page
 
     @temp-1
     Scenario: Verify current temperature should not be greater or less then the Temperature from daily timeline
@@ -22,6 +22,6 @@ Feature: temp feature
 
     @temp-4
     Scenario: Verify invalid signup error message
-        Given I am on darksky Register Page
-        When I click on register button
+        When I am on darksky Register Page
+        Then I click on register button
         Then I verify I am on register page by asserting Register header

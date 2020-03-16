@@ -20,13 +20,24 @@ public class DarkSkySD {
     public void iAmOnDarkSkyHomePage() {
         // darkSkyHomepage.enterAddress("New York");
         darkSkyHomepage.clickOnDarkSkyButton();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+
+        }
         darkSkyAPIPage.clickOnSignUpButton();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+
+        }
         Assert.assertTrue(darkSkyRegisterPage.isRegisterHeaderDisplayed());
     }
     @When("^I click on register button$")
     public void clickOnRegisterButton() {
         darkSkyRegisterPage.clickOnRegisterButton();
     }
+
     @Then("^I verify I am on register page by asserting Register header$")
     public void verifyRegisterHeader() {
         Assert.assertTrue(darkSkyRegisterPage.isRegisterHeaderDisplayed());
