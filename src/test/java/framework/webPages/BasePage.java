@@ -35,7 +35,7 @@ public class BasePage {
 		return element;
 	}
 
-	public void clickOn(By locator) {
+	public static void clickOn(By locator) {
 		webAction(locator).click();
 	}
 
@@ -43,7 +43,7 @@ public class BasePage {
 		webAction(locator).sendKeys(value);
 	}
 
-	public String getTextFromElement(By locator) {
+	public static String getTextFromElement(By locator) {
 		return webAction(locator).getText();
 	}
 

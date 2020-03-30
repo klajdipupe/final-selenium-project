@@ -17,7 +17,7 @@ Feature: temp feature
 
     @temp-3
     Scenario: Verify individual day temp timeline
-    When I expand today's timeline
+    When I expand today timeline
     Then I verify lowest and highest temp is displayed correctly
 
 

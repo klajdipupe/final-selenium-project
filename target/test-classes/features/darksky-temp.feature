@@ -6,6 +6,7 @@ Feature: temp feature
 
     @temp-1
     Scenario: Verify current temperature should not be greater or less then the Temperature from daily timeline
+    When I am on darksky Register Page
     Then I verify current temp is not greater or less than temps from daily timeline
 
 
